@@ -16,7 +16,7 @@ class HomeController
 
   /*
    * Show the latest listings
-   * 
+   *
    * @return void
    */
   public function index()

@@ -16,7 +16,7 @@ class Router
    * @param string $uri
    * @param string $action
    * @param array $middleware
-   * 
+   *
    * @return void
    */
   public function registerRoute($method, $uri, $action, $middleware = [])
@@ -34,7 +34,7 @@ class Router
 
   /**
    * Add a GET route
-   * 
+   *
    * @param string $uri
    * @param string $controller
    * @param array $middleware
@@ -47,11 +47,11 @@ class Router
 
   /**
    * Add a POST route
-   * 
+   *
    * @param string $uri
    * @param string $controller
    * @param array $middleware
-   * 
+   *
    * @return void
    */
   public function post($uri, $controller, $middleware = [])
@@ -61,11 +61,11 @@ class Router
 
   /**
    * Add a PUT route
-   * 
+   *
    * @param string $uri
    * @param string $controller
    * @param array $middleware
-   * 
+   *
    * @return void
    */
   public function put($uri, $controller, $middleware = [])
@@ -75,11 +75,11 @@ class Router
 
   /**
    * Add a DELETE route
-   * 
+   *
    * @param string $uri
    * @param string $controller
    * @param array $middleware
-   * 
+   *
    * @return void
    */
   public function delete($uri, $controller, $middleware = [])
@@ -89,7 +89,7 @@ class Router
 
   /**
    * Route the request
-   * 
+   *
    * @param string $uri
    * @param string $method
    * @return void
@@ -141,7 +141,7 @@ class Router
           $controller = 'App\\controllers\\' . $route['controller'];
           $controllerMethod = $route['controllerMethod'];
 
-          // Instatiate the controller and call the method
+          // Insatiate the controller and call the method
           $controllerInstance = new $controller();
           $controllerInstance->$controllerMethod($params);
           return;

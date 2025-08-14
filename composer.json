@@ -1,10 +1,10 @@
 {
-  "name": "bradtraversy/workopia-php",
+  "name": "GTfort/workopia-php",
   "description": "Job listing application",
   "authors": [
     {
-      "name": "Brad Traversy",
-      "email": "support@traversymedia.com"
+      "name": "GTfort",
+      "email": "fortune.nwuneke@gmail.com"
     }
   ],
   "autoload": {
